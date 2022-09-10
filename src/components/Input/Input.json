@@ -1,0 +1,121 @@
+{
+  "metaData": {
+    "id": "Carbon-Input"
+  },
+  "layer": {
+    "type": "box",
+    "style": {
+      "display": "flex",
+      "flex-direction": "column"
+    },
+    "children": [
+      {
+        "metaData": {
+          "id": "Carbon-Input-label"
+        },
+        "layer": {
+          "type": "custom",
+          "element": "label",
+          "style": {
+            "display": "block"
+          },
+          "children": [
+            {
+              "metaData": {
+                "id": "Carbon-Input-label-text"
+              },
+              "layer": {
+                "type": "text",
+                "style": {
+                  "display": "block",
+                  "margin-bottom": "5px",
+                  "font-family": "sans-serif"
+                },
+                "data": {
+                  "control": "label"
+                }
+              }
+            },
+            {
+              "metaData": {
+                "id": "Carbon-Input-element"
+              },
+              "layer": {
+                "type": "custom",
+                "element": "input",
+                "style": {
+                  "display": "block",
+                  "padding": "10px",
+                  "border": "none",
+                  "border-bottom": "1px solid black",
+                  "background": "rgb(244, 244, 244)"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "metaData": {
+          "id": "Carbon-Input-label-helper"
+        },
+        "layer": {
+          "type": "text",
+          "style": {
+            "display": "block",
+            "margin-top": "10px",
+            "font-family": "sans-serif",
+            "font-size": "12px"
+          },
+          "data": {
+            "control": "helperText"
+          }
+        }
+      }
+    ]
+  },
+  "properties": {
+    "variants": {
+      "invalid": {
+        "metaData": {
+          "id": "Carbon-Input-label"
+        },
+        "layer": {
+          "children": [
+            {
+              "metaData": {
+                "id": "Carbon-Input-element"
+              },
+              "layer": {
+                "style": {
+                  "outline": "2px solid red",
+                  "border-bottom": "none"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "success": {
+        "metaData": {
+          "id": "Carbon-Input-label"
+        },
+        "layer": {
+          "children": [
+            {
+              "metaData": {
+                "id": "Carbon-Input-element"
+              },
+              "layer": {
+                "style": {
+                  "outline": "2px solid green",
+                  "border-bottom": "none"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
